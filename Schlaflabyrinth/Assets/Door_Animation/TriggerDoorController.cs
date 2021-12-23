@@ -39,23 +39,4 @@ public class TriggerDoorController : MonoBehaviour
         }
     }
 
-
-    // private void OnTriggerEnter(Collider other)
-    // {
-    //     if (other.CompareTag("Player"))
-    //     {
-    //         if (openTrigger)
-    //         {
-    //             myDoor.Play("DoorOpen", 0, 0.0f);
-    //             gameObject.SetActive(false);
-    //         }
-    //         else if (closeTrigger)
-    //         {
-    //             myDoor.Play("DoorClose", 0, 0.0f);
-    //             gameObject.SetActive(false);
-    //         }
-    //     }
-    // }
-
-
 }

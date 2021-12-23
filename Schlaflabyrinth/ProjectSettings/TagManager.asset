@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - DoorButton
+  - Ziel
   layers:
   - Default
   - TransparentFX
