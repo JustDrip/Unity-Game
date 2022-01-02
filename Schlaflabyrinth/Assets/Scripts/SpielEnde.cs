@@ -6,12 +6,22 @@ using UnityEngine.SceneManagement;
 
 public class SpielEnde : MonoBehaviour
 {
-    public void RestartButton()
+
+    [SerializeField] private KeyCode Exit = KeyCode.V;
+    [SerializeField] private KeyCode Restart = KeyCode.R;
+    
+
+    private void Update()
     {
-        SceneManager.LoadScene("Schlaflabyrinth_1");
+        if (Input.GetKey(Exit))
+        {
+            SceneManager.LoadScene("Menu");
+            //Application.Quit();
+        }
+        if (Input.GetKey(Restart))
+        {
+            SceneManager.LoadScene("Schlaflabyrinth_1");
+        }
     }
-    public void ExitButton()
-    {
-        Application.Quit();
-    }
+
 }
