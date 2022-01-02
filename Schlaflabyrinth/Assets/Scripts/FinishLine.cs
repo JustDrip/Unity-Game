@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class FinishLine : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class FinishLine : MonoBehaviour
     [SerializeField] private Button EndButton;
     [SerializeField] private Image EndImage;
     [SerializeField] private Text EndText2;
+    [SerializeField] private Button EndRestart;
+    [SerializeField] private Text EndRestartText;
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
@@ -19,8 +22,9 @@ public class FinishLine : MonoBehaviour
             EndButton.enabled = true;
             EndImage.enabled = true;
             EndText2.enabled = true;
-
+            EndRestart.enabled = true;
+            EndRestartText.enabled = true;
         }   
     }
-
+  
 }
