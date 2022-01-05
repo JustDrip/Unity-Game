@@ -6,25 +6,33 @@ using UnityEngine.SceneManagement;
 
 public class KeyCollect : MonoBehaviour
 {
-
+     int Keycounter =1;
+    public Text Scorechange;
+    public GameObject Key;
+    
     void OnTriggerEnter(Collider other)
     {
 
         if (other.CompareTag("Player"))
         {
 
-            SceneManager.LoadScene("Menu");
-            //EndScreen.enabled = true;
-            //EndText.enabled = true;
-            //EndButton.enabled = true;
-            //EndImage.enabled = true;
-            //EndText2.enabled = true;
-            //EndRestart.enabled = true;
-            //EndRestartText.enabled = true;
-            //EndImage2.enabled = true;
+            Scorechange.text = "Schlüssel gefunden: " + Keycounter + "/3";
+
+            Key.active = false;
+
+            if (Keycounter >= 2)
+            {
+                Keycounter = 3;
+            }
+            else
+            {
+                Keycounter++;
+            }
+            
         }
     }
 
+    
 
 }
 
