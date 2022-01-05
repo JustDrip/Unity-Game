@@ -6,9 +6,10 @@ using UnityEngine.SceneManagement;
 
 public class KeyCollect : MonoBehaviour
 {
-     int Keycounter =1;
+     int Keycounter = 1;
     public Text Scorechange;
     public GameObject Key;
+
     
     void OnTriggerEnter(Collider other)
     {
