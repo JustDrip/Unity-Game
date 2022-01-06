@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class KeyCollect : MonoBehaviour
 {
-     int Keycounter = 1;
+    public static int Keycounter = 1;
     public Text Scorechange;
     public GameObject Key;
 
