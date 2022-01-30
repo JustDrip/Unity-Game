@@ -16,7 +16,7 @@ public class SpielEnde : MonoBehaviour
         if (Input.GetKey(Exit))
         {
             SceneManager.LoadScene("Menu");
-            //Application.Quit();
+            Application.Quit();
         }
         if (Input.GetKey(Restart))
         {
